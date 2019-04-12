@@ -1,5 +1,5 @@
 /*
- *(CPE10407, UVA10055) Hashmat the brave warrior
+ *(CPE10407, UVA10055) Hashmat the brave warrior.cpp
  * Author:Yun Pei Chao 
  */
 #include<iostream>
