@@ -6,7 +6,7 @@
 #include<vector>
 #include<string>
 using namespace std;
-char  c[] = "1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./";     //��L
+char  c[] = "1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./";     //鍵盤上的字
 
 char decode(char a) {
 	for (int i = 0; i < 46; i++) {
@@ -27,15 +27,12 @@ int main() {
 	while (getline(cin, s)) {
 		
 		for (int i = 0; i < size(s); i++) {
-			str=tolower(s[i]);
+			str=tolower(s[i]);                     //轉為小寫字母
 			sentence+=decode(str);
 		}
 		cout << sentence << endl;
 	}
 	
-
-
-
 
 	system("pause");
 	return 0;
