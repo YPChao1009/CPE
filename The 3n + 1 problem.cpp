@@ -3,10 +3,8 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<vector>
-
 using namespace std;
-vector<int> num;
+
 int Maximum(int a, int b) {
 	if (a > b)
 		return a;
@@ -18,14 +16,14 @@ int main() {
 	int a,b;
 	while (cin >> a >> b) {
 		if (a > b) {
-			int c = a;
+		    int c = a;
 			a = b;
 			b = c;
 		}
 
 		int max = 0;
 		for (int i = a; i <= b; i++) {
-			int n = i;                         //¨C¦¸³£µ¹·sªº¤@²Õ
+			int n = i;                         //æ¯æ¬¡éƒ½çµ¦æ–°çš„ä¸€çµ„
 			int len = 1;
 			while (true) {
 				if (n == 1)
@@ -38,10 +36,10 @@ int main() {
 				}
 				len++;
 			}
-			max=Maximum(max, len);                    //¤ñ¸û½d³ò¸Ì¦U­Ó¼Æ¦rªº³Ì¤jªø«×
+			max=Maximum(max, len);                    //æ¯”è¼ƒç¯„åœè£¡å„å€‹æ•¸å­—çš„æœ€å¤§é•·åº¦
 		}
 
-		cout<<a<<" "<<b<<" "<<max<<endl ;
+		cout<< a <<" "<< b <<" "<< max << endl ;
 	}
 
 
