@@ -11,9 +11,9 @@ int main() {
 	
 	while (cin >> a >> b && (a != 0 && b != 0)) {
 		int count = 0;
-		int c=0;                                            //�i��
+		int c=0;                                            //進位值
 		while ((a != 0 || b != 0)) {
-			if (a % 10 + b % 10 + c >= 10)
+			if (a % 10 + b % 10 + c >= 10)              //判斷進位
 			{
 				count++;
 				c = 1;
@@ -25,11 +25,11 @@ int main() {
 			b /= 10;
 
 		}
-		if (count == 0)
+		if (count == 0)                                     
 			cout << "No carry operation.\n";
 		else if (count == 1)
 			cout << count << " carry operation.\n";
-		else
+		else                                                 //進位個數顯示
 			cout<<count<<" carry operations.\n";
 
 	}
