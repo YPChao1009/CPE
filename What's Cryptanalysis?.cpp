@@ -6,11 +6,6 @@
 #include<string>
 using namespace std;
 
-void swap(int a, int b) {
-	int temp = a;
-	a = b;
-	b = temp;
-}
 int main() {
 	int n;
 	cin >> n;
@@ -21,11 +16,11 @@ int main() {
 	for (int i = 0; i < n+1; i++) {
 		getline(cin, s);
 		for (int j = 0; j < size(s); j++) {
-			if (s[j] >= 'A'&&s[j] <= 'Z') {
+			if (s[j] >= 'A'&&s[j] <= 'Z') {          //將大寫字母放入陣列
 				str[s[j] - 'A']++;
 				total++;
 			}
-			else if (s[j] >= 'a'&&s[j] <= 'z') {
+			else if (s[j] >= 'a'&&s[j] <= 'z') {     //將小寫字母放入陣列
 				str[s[j] - 'a']++;
 				total++;
 			}
@@ -33,7 +28,7 @@ int main() {
 		
 	}
 
-	for (int i = total; i >= 1; i--) {                         //*********�r���`��
+	for (int i = total; i >= 1; i--) {                         //字母總數往回找大的
 		for (int j = 0; j < 26; j++) {
 			if (str[j] == i) {
 				cout << char(j + 'A') << " " << i << endl;
@@ -41,9 +36,6 @@ int main() {
 			}
 		}
 	}
-
-
-
 
 
 	system("pause");
