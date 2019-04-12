@@ -17,11 +17,11 @@ int main() {
 		num.clear();
 		for(int k=0;k<r;k++){			
 			cin >> s;
-			num.push_back(s);                   //©ñ¶ivector
+			num.push_back(s);                   //æ”¾å…¥vector
 		}
 		int sum = 0;
 		sort(num.begin(), num.end());
-		int mid = num[r / 2];                    //¤¤¦ì¼Æ
+		int mid = num[r / 2];                    //ä¸­ä½æ•¸
 		for (int j = 0; j < r; j++) {
 			sum += abs(mid - num[j]);
 		}
