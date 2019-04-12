@@ -5,11 +5,11 @@
 #include<iostream>
 using namespace std;
 
-void print(long long int n) {                               //*****************************
+void print(long long int n) {                               
 	
 	
 	if (n / 10000000 > 0) {
-		print(n / 10000000);                                //*************»¼°j
+		print(n / 10000000);                                //éè¿´
 		cout<<" kuti ";
 		n %= 10000000;
 	}
