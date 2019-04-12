@@ -8,7 +8,7 @@ using namespace std;
 
 int F(int a) {
 	int total=0;
-	while (a > 0) {                        //©Ò¦³¦ì¼Æªº¼Æ¦r¬Û¥[
+	while (a > 0) {                        //æ‰€æœ‰ä½æ•¸çš„æ•¸å­—ç›¸åŠ 
 		total += a % 10;
 		a /= 10;
 	}
@@ -20,7 +20,7 @@ int main() {
 	
 	while (cin >> n&& n!=0) {
      
-		while (n > 9) {                   //ÅÜ¦¨¤Q¶i¦ì¼Æªº®É­Ô­n°µFUNCTION
+		while (n > 9) {                   //è®Šæˆåé€²ä½æ•¸çš„æ™‚å€™è¦åšFUNCTION
            int total=0;
 			total += F(n);
 			n = total;
@@ -28,10 +28,6 @@ int main() {
 		cout << n << endl;
 	}
 	
-
-
-
-
 
 	system("pause");
 	return 0;
