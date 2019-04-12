@@ -7,8 +7,6 @@
 #include<algorithm>
 using namespace std;
 
-
-
 int main() {
 
 	int n;
@@ -24,11 +22,11 @@ int main() {
 
 	}
 
-	sort(country, country + n);                    //§â°ê®a¥ý±Æ¦n
-	for (int i = 0; i < n; i++) {                  //§ä¬O§_­«½Æ
+	sort(country, country + n);                    //æŠŠåœ‹å®¶å…ˆæŽ’å¥½
+	for (int i = 0; i < n; i++) {                  //æ‰¾æ˜¯å¦é‡è¤‡
 		int num = 1;
 		cout << country[i] << " ";
-		for (int j = i + 1; j < n; j++) {          //****§ä¦P­Ó°ê®a­Ó¼Æ ª½¨ì¤£¤@¼Ë¬°¤î
+		for (int j = i + 1; j < n; j++) {          //æ‰¾åŒå€‹åœ‹å®¶å€‹æ•¸ ç›´åˆ°ä¸ä¸€æ¨£ç‚ºæ­¢
 			if (country[i] == country[j]) {
 				num++;
 			}
@@ -37,13 +35,10 @@ int main() {
 				break;
 			}
 			cout << num << endl;
-		i = j;                                              //***************
+		i = j;                                              
 		}
 		
 	}
-
-
-
 
 	system("pause");
 	return 0;
