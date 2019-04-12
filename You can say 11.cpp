@@ -14,7 +14,7 @@ int main() {
 		int diff = 0;
 		if (N != "0") {
 			for (int i = 0; i < N.length(); i++) {
-				sum[i % 2] += N[i] - '0';                           //©_°¸¤À¸s¡A¦r¦êÂà¼Æ¦r
+				sum[i % 2] += N[i] - '0';                           //å¥‡å¶åˆ†ç¾¤ï¼Œå­—ä¸²è½‰æ•¸å­—
 			}
 			diff = abs(sum[0] - sum[1]);
 			if (diff % 11 == 0) {
@@ -28,10 +28,6 @@ int main() {
 		}
 	}
 	
-
-
-
-
 	system("pause");
 	return 0;
 }
