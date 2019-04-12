@@ -3,7 +3,6 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<vector>
 
 using namespace std;
 
@@ -14,8 +13,6 @@ int main() {
 		cout << abs(b - a) << endl;
 
 	}
-
-
 
 
 	system("pause");
