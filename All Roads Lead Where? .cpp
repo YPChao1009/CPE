@@ -7,8 +7,6 @@
 #include<map>
 using namespace std;
 
-
-
 int main(void) {
 
 	int t;
@@ -29,9 +27,9 @@ int main(void) {
 			cin >> city1 >> city2;
 			char route1[26], route2[26];
 			int r1=0, r2=0;                             //***
-			route1[0] = city1[0];                       //ªì©l¸ô½u
-			while (route1[r1] != 'R') {                 //¤£¬O±q°_ÂI¶}©l
-				route1[r1 + 1] = parent[route1[r1]];//§âMAPªºªF¦è©ñ¶i¨Ó ±q«°¥«¨ìÃ¹°¨
+			route1[0] = city1[0];                       //åˆå§‹è·¯ç·š
+			while (route1[r1] != 'R') {                 //ä¸æ˜¯å¾èµ·é»é–‹å§‹
+				route1[r1 + 1] = parent[route1[r1]];//æŠŠMAPçš„æ±è¥¿æ”¾é€²ä¾† å¾åŸå¸‚åˆ°ç¾…é¦¬
 				r1++;
 			}
 			route2[0] = city2[0];
@@ -39,7 +37,7 @@ int main(void) {
 				route2[r2 + 1] = parent[route2[r2]];
 				r2++;
 			}
-			while (route1[r1] == route2[r2]) {           //2­Ó«°¥«¨ìÃ¹°¨­«½Æ¸ô®|¥h°£
+			while (route1[r1] == route2[r2]) {           //2å€‹åŸå¸‚åˆ°ç¾…é¦¬é‡è¤‡è·¯å¾‘å»é™¤
 				r1--;
 				r2--;
 			}
@@ -54,14 +52,6 @@ int main(void) {
 		}
 		
 	}
-
-	
-
-
-
-
-
-
 
 	system("pause");
 	return 0;
