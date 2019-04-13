@@ -12,12 +12,12 @@ int main() {
 	int n;
 	while (cin >> n && n != 0) {
 		
-		map<set<int>, int> count;                         //set<int>¬O¿ï½Ò²Õ¦X
+		map<set<int>, int> count;                         //set<int>æ˜¯é¸èª²çµ„åˆ
 		int M = 0, MC = 0;
 		while (n--) {
 			set<int> suit;
 			int course;
-			for (int i = 0; i < 5; i++) {                 //¨C¦æ¤À¶}¤@­Ó¤@­ÓÅª
+			for (int i = 0; i < 5; i++) {                 //æ¯è¡Œåˆ†é–‹ä¸€å€‹ä¸€å€‹è®€
 				cin >> course;
 				suit.insert(course);
 			}
