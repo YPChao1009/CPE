@@ -6,17 +6,15 @@
 #include<string>
 using namespace std;
 
-
-
 int main() {
 	
 	int a;
 	while (cin >> a && a != 0) {
 		int up = 1, n = 2, w = 3, e = 4, s = 5, down = 6;
 		string b;
-		int t;                                            //************buffer
+		int t;                                                //temp
 		for (int i = 0; i < a; i++) {
-			cin >> b;                                     //©¹­ş¤èºu ´N©¹¤Ï¤è¦V¬ö¿ı¦^¥h
+			cin >> b;                                     //å¾€å“ªæ–¹æ»¾ å°±å¾€åæ–¹å‘ç´€éŒ„å›å»
 			if (b == "north")
 			{
 				t = up;
