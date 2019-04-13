@@ -18,9 +18,9 @@ int main() {
 		int count = 0;
 		for (int i = 0; i < num; i++) {
 			cin >> p[i];
-			for (int j = p[i]; j <= total; j += p[i]) {         //ÃäÅªÃä°µ
-				day[j] = 1;                                     //¦³ªº´N¼Ğ¥Ü
-				if (j % 7 == 6 || j % 7 == 0) {                 //¬P´Á¤­¡B¤»¤£ºâ
+			for (int j = p[i]; j <= total; j += p[i]) {         //é‚Šè®€é‚Šåš
+				day[j] = 1;                                     //æœ‰çš„å°±æ¨™ç¤º
+				if (j % 7 == 6 || j % 7 == 0) {                 //æ˜ŸæœŸäº”ã€å…­ä¸ç®—
 					day[j] = 0;
 				}
 			}
@@ -28,16 +28,13 @@ int main() {
 		}
 		for (int i = 1; i <= total; i++) {
 			
-			if (day[i] == 1)                                     //ºâÁ`¤Ñ¼Æ
+			if (day[i] == 1)                                     //ç®—ç¸½å¤©æ•¸
 				count++;
 		}
 		cout << count << endl;
 		
 
 	}
-
-
-
 
 	system("pause");
 	return 0;
