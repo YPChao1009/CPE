@@ -3,18 +3,15 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<string>
 #include<cmath>
 using namespace std;
-
-
 
 int main() {
 
 	int S, D;
 	while (cin >> S >> D) {
 		int sum = 0;
-		int count = S;                              //±q·í¤éÄ~Äòºâ¤H¼Æ
+		int count = S;                              //å¾žç•¶æ—¥ç¹¼çºŒç®—äººæ•¸
 		while(sum<D){
 			sum += S;
 			S++;
