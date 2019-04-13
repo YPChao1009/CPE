@@ -17,8 +17,8 @@ int main() {
 		}
 
 
-		for (int i = 1; i <= s.size(); i++) {                 //Á`­Ó¼Æ¤jªº¦b«á
-			for (int j = 256; j >= 0; j--) {                  //ASCII¤jªº¦b«e
+		for (int i = 1; i <= s.size(); i++) {                 //ç¸½å€‹æ•¸å¤§çš„åœ¨å¾Œ
+			for (int j = 256; j >= 0; j--) {                  //ASCIIå¤§çš„åœ¨å‰
 				if (arr[j] == i) {
 					cout << j << " " << i << endl;
 				}
