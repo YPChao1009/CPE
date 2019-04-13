@@ -8,16 +8,15 @@ using namespace std;
 
 int main(void) {
 
-
 	string a, b;
 	while (cin >> a >> b) {
-		int i=1,j=1;                                           //±q1¶}©l
-		while (i < a.length() && j < b.length()) {             //************
-			if (a[i] == b[j]) {                                //¤@¼Ë´N³£©¹«á¤ñ
+		int i=1,j=1;                                               //å¾ž1é–‹å§‹
+		while (i < a.length() && j < b.length()) {             
+			if (a[i] == b[j]) {                                //ä¸€æ¨£å°±éƒ½å¾€å¾Œæ¯”
 				i++;
 				j++;
 			}
-			else if (a[i] != b[j]) {                           //¤ñ²Ä¤G­Ó¦rªº¨ä¥L¦r¥À
+			else if (a[i] != b[j]) {                           //æ¯”ç¬¬äºŒå€‹å­—çš„å…¶ä»–å­—æ¯
 				j++;
 			}
 		}
@@ -28,7 +27,6 @@ int main(void) {
 		else if (i != a.length())
 			cout << "No\n";
 	}
-
 
 
 	system("pause");
