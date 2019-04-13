@@ -3,12 +3,7 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<vector>
-#include<string>
 using namespace std;
-
-
-
 
 int main() {
 	
@@ -22,11 +17,11 @@ int main() {
 			if (b[i] <= b[i - 1])
 				b2 = 1;
 		}
-		int note[10000] = {};                    //***********{}************
+		int note[10000] = {};                    //åˆå§‹é™£åˆ—ç‚ºç©º
 		if (b2 == 0) 
 			for (int i = 1; i <= n; i++) {
 				for (int j = i; j <= n; j++) {
-					if (note[b[i] + b[j]] != 0)       //*******ÀË´ú¦ì¸m¦³¨S¦³¤H¤w¸g§¤¨ì ­Y¦³´N¬O­«½Æ
+					if (note[b[i] + b[j]] != 0)       //æª¢æ¸¬ä½ç½®æœ‰æ²’æœ‰äººå·²ç¶“ååˆ° è‹¥æœ‰å°±æ˜¯é‡è¤‡
 						b2 = 1;
 					note[b[i]+ b[j]]=1;
 				}
