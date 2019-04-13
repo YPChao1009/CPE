@@ -3,19 +3,16 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<string>
-#define PI 2*acos(0.)                                                //*************
+#define PI 2*acos(0.)                                               
 using namespace std;
-
-
 
 int main() {
 
 	double edge;
 	while (cin >> edge) {
-		double square = edge * edge;                                               //¥¿¤è§Î
-		double sector = edge * edge*PI/12;                                         //30«×ªº®°§Î
-		double angle = (edge * edge*PI/6) - (edge * (sqrt(3) / 2)*edge / 2);      //60«×®°§Î-¥¿¤T¨¤§Î
+		double square = edge * edge;                                               //æ­£æ–¹å½¢
+		double sector = edge * edge*PI/12;                                         //30åº¦çš„æ‰‡å½¢
+		double angle = (edge * edge*PI/6) - (edge * (sqrt(3) / 2)*edge / 2);      //60åº¦æ‰‡å½¢-æ­£ä¸‰è§’å½¢
 		
 		double Y = 5 * sector - 2 * angle - square;
 		double X = sector+2*angle-Y;
