@@ -4,19 +4,18 @@
  */
 #include<iostream>
 #include<string>
-#include<cmath>
 using namespace std;
 
 int StringToInt(string a) {
 	int sum=0;
 	for (int i = 0; i < size(a); i++) {
-		if (a[i] == '1')                       //***********
+		if (a[i] == '1')                       //計算字串形式的數字大小
 		sum +=pow(2, size(a) - 1 - i);
 	}
 	return sum;
 }
 
-int GCD(int m, int n) {
+int GCD(int m, int n) {                                //最大公因數
 	while (n != 0) {
 		int r = m % n;
 		m = n;
@@ -36,7 +35,7 @@ int main() {
 
 			int n1 = StringToInt(s1);
 			int n2 = StringToInt(s2);
-			if (GCD(n1, n2) > 1) {                         //********
+			if (GCD(n1, n2) > 1) {                         
 				cout << "Pair #" << count << ": All you need is love!\n";
 			}
 			else
