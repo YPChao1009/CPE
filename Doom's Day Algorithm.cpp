@@ -21,10 +21,10 @@ int month, day;
 		cin >> month >> day;
 
 		int w = 5;
-		for (int j = 1; j < month; j++) {              //�`�Ѽ�
+		for (int j = 1; j < month; j++) {              //Á`¤Ñ¼Æ
 			w += month_days[j - 1];
 		}
-		w = (w + day) % 7;                             //�P���X
+		w = (w + day) % 7;                             //¬P´Á´X
 		cout << week[w] << endl;
 	}
 
