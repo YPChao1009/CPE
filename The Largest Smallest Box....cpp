@@ -1,5 +1,5 @@
 /*
- *(CPE10423, UVA10215) 14.The Largest Smallest Box....cpp
+ *(CPE10423, UVA10215) The Largest Smallest Box....cpp
  * Author:Yun Pei Chao 
  */
 #include<iostream>
