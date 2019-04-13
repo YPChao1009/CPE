@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 
-bool is_Prime(int a) {
+bool is_Prime(int a) {                                        //åˆ¤æ–·è³ªæ•¸
 	for (int i = 2; i < a ; i++) {
 		if (a%i == 0)
 			return false;
@@ -19,7 +19,7 @@ int main() {
 
 		int tmp = n;
 		int result = 0;
-		while (true) {                                  //********¼Æ¦r¤ÏÂà
+		while (true) {                                  //æ•¸å­—åè½‰
 			int digit = tmp % 10;
 			result = result * 10 + digit;
 			tmp /= 10;
