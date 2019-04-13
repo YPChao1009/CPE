@@ -3,8 +3,6 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<string>
-#include<algorithm>
 using namespace std;
 
 
@@ -19,7 +17,7 @@ int main() {
 			cin >> set[i];
 			
 		}
-		for (int j = 0; j <n-1; j++) {
+		for (int j = 0; j <n-1; j++) {                    //每2數之差
 			diff[j] = abs(set[j+1] - set[j]);
 			
 		}
@@ -29,7 +27,7 @@ int main() {
 			
 			if (diff[i] > (n - 1)) {
 				flag = 1;
-				break;                             //************
+				break;                             //不符合就直接break
 			}
 		}
 
