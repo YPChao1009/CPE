@@ -3,11 +3,7 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<string>
-#include<cmath>
 using namespace std;
-
-
 
 int main() {
 
@@ -17,14 +13,14 @@ int main() {
 	while (n--) {
 		char str, str1;
 		int total;
-		int flag = 0;                                      //*********************
+		int flag = 0;                                      //用flag判斷是否有問題
 		
-		int matrix[100][100] = {};                         //**********
+		int matrix[100][100] = {};                         //初始矩陣為空
 		cin >> str >> str1 >> total;
 		for (int i = 0; i < total; i++) {
 			for (int j = 0; j < total; j++) {
 				cin >> matrix[i][j];
-				if (matrix[i][j] < 0) {                       //�o�̤��iBREAK �nŪ��
+				if (matrix[i][j] < 0) {                       //這裡不可BREAK 要讀完
 					flag = 1;
 				}
 			}
@@ -32,9 +28,9 @@ int main() {
 		for (int i = 0; i < total; i++) {
 			for (int j = 0; j < total; j++) {
 
-				if (matrix[i][j] != matrix[total - 1 - i][total - 1 - j]) {    //�ˬd���
+				if (matrix[i][j] != matrix[total - 1 - i][total - 1 - j]) {    //檢查對稱
 					flag = 1;
-					break;                                                     //***************
+					break;                                                     //有問題要break
 				}
 				else if (matrix[i][j] == matrix[total - 1 - i][total - 1 - j])
 				{
