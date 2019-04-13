@@ -23,11 +23,11 @@ int main() {
 		table[0] = 0;
 		table[1] = 1;
 		table[2] = 2;
-		for (int i = 3; i < 50; i++) {                              //¥ı°µªí
+		for (int i = 3; i < 50; i++) {                              //å…ˆåšè¡¨
 			table[i] = table[i - 1] + table[i - 2];
 		}
 		 
-		cout << table[n] << endl;                                   //¦A¬d
+		cout << table[n] << endl;                                   //å†æŸ¥
 	}
 
 	system("pause");
