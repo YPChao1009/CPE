@@ -9,13 +9,8 @@ int main() {
 
 	int a, b;
 	while (cin >> a >> b) {
-		cout << 2 * a*b << endl;           //¤½¦¡±À¾É¥X¨Óªº
+		cout << 2 * a*b << endl;           //å…¬å¼æ¨å°å‡ºä¾†çš„
 	}
-
-
-
-
-
 
 	system("pause");
 	return 0;
