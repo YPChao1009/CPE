@@ -7,11 +7,11 @@
 #include<string>
 using namespace std;
 char Map[100][100];
-bool Collected[100][100];                                        //¬O§_¨«³X
+bool Collected[100][100];                                        //æ˜¯å¦èµ°è¨ª
 int m, n;
 void CollectOil(int i, int j) {                                  //DFS
 	if (i<0 || i>=m || j<0 || j>=n) {
-		return;                                                  //¤£¶Ç¦^­È
+		return;                                                  //ä¸å‚³å›å€¼
 	}
 	else if (Map[i][j] == '*' || Collected[i][j] == true) {
 		return;
