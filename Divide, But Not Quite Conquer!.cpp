@@ -9,28 +9,26 @@ int main() {
 	
 	int n, m;
 	while (cin >> n >> m) {
-		if (n < 2 || m < 2) {                             //¨Ò¥~
+		if (n < 2 || m < 2) {                             //ä¾‹å¤–
 			cout << "Boring!\n";
 		}
-		int backup = n;                                   //³Æ¥÷
-		while (n%m == 0 && n > 1) {                       //¥ıÀË¬d¯à¤£¯à°µ
+		int backup = n;                                   //å‚™ä»½
+		while (n%m == 0 && n > 1) {                       //å…ˆæª¢æŸ¥èƒ½ä¸èƒ½åš
 			n /= m;
 		}
 		if (n != 1) {
 			cout << "Boring!\n";
 		}
-		else {                                           //¯u¥¿­nprint¥Xªº
+		else {                                           //çœŸæ­£è¦printå‡ºçš„
 			n = backup;
 			while (n%m == 0 && n > 1) {
 				cout << n << " ";
 				n /= m;
 				
-			}cout << "1" << endl;                        //¦]¬°n=1®É´N¸õ¥Xwhile ¤£·|print
+			}cout << "1" << endl;                        //å› ç‚ºn=1æ™‚å°±è·³å‡ºwhile ä¸æœƒprint
 		}
 		
 	}
-
-
 
 	system("pause");
 	return 0;
