@@ -3,11 +3,7 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<vector>
-#include<string>
 using namespace std;
-
-
 
 int main() {
 	int n;
@@ -15,7 +11,7 @@ int main() {
 	int count = 1;
 	while (n--) {
 		int a, b;
-		int sum[2] = { 0,0 };                         //¤À©_°¸case
+		int sum[2] = { 0,0 };                         //åˆ†å¥‡å¶case
 		int odd=0;
 		
 		cin >> a >> b;
