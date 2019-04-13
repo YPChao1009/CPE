@@ -23,7 +23,7 @@ int main() {
 		for (int i = 0; i < length; i++) {
 			cin >> train[i];
 		}
-		for (int i = 0; i < length - 1; i++) {                 //bubble sort(¨â¨â¥æ´«)
+		for (int i = 0; i < length - 1; i++) {                 //bubble sort(å…©å…©äº¤æ›)
 			for (int j = 0; j < length-i-1; j++) {
 				if (train[j] > train[j + 1]) {
 					swap(train[j], train[j + 1]);
