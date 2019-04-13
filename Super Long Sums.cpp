@@ -15,7 +15,7 @@ int main() {
 		cin >> m;
 		int count = 0;
 		
-		memset(a, 0, sizeof(a));                      //memset «ü¥O¬O¥Î¨Ó§â big °}¦C¥ý¥þ³£²M¹s
+		memset(a, 0, sizeof(a));                      //memset æŒ‡ä»¤æ˜¯ç”¨ä¾†æŠŠ big é™£åˆ—å…ˆå…¨éƒ½æ¸…é›¶
 			memset(b, 0, sizeof(b));
 			memset(c, 0, sizeof(c));
 		for (int i = 0; i <m; i++) {
