@@ -9,19 +9,19 @@ using namespace std;
 
 bool find(int n, int m) {                         //********
 	queue<int> crisis;
-	for (int i = 1; i <= n; i++) {                //¥þ©ñ¤Jqueue
+	for (int i = 1; i <= n; i++) {                //å…¨æ”¾å…¥queue
 		crisis.push(i);
 	}
 	int count = 0;
 	while (crisis.size() != 1) {
-		int target = crisis.front();               //¥Ø«eªº
+		int target = crisis.front();               //ç›®å‰çš„
 		crisis.pop();                              //*******
-		if (count%m != 0) {                        //******§ä¶¡¹jm¤§¶¡ªº­È¡A©ñ¦^queue¡A¤£¬Oªº´N¥á±¼(»Ý­nªº©ñ¦^queue)
+		if (count%m != 0) {                        //******æ‰¾é–“éš”mä¹‹é–“çš„å€¼ï¼Œæ”¾å›žqueueï¼Œä¸æ˜¯çš„å°±ä¸ŸæŽ‰(éœ€è¦çš„æ”¾å›žqueue)
 			crisis.push(target);
 		}
 		count++;
 	}
-	return crisis.front() == 13;                   //§ä³Ì«á¤@­Ó¼Æ¬O§_¬°13
+	return crisis.front() == 13;                   //æ‰¾æœ€å¾Œä¸€å€‹æ•¸æ˜¯å¦ç‚º13
 }
 
 
@@ -29,7 +29,7 @@ int main() {
 
 	int n,m;
 	while (cin >> n && n != 0) {
-		for (int m = 1; m<n; m++) {                    //¤@­Ó¤@­Ó¸Õ
+		for (int m = 1; m<n; m++) {                    //ä¸€å€‹ä¸€å€‹è©¦
 			if (find(n, m) == true) {
 				cout << m << endl;
 				break;
