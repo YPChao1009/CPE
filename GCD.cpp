@@ -3,7 +3,6 @@
  * Author:Yun Pei Chao 
  */
 #include<iostream>
-#include<string>
 using namespace std;
 int GCD(int m, int n) {
 	int r;
