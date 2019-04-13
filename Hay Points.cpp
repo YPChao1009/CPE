@@ -10,7 +10,7 @@ using namespace std;
 int main(void) {
 
 	int m, n;
-	map<string, int> hay;                               //map»yªk   <a,b>¤º¤§a¬°Åª¤Jªº¦r b¬°¬Û¹ïªº»ù®æ
+	map<string, int> hay;                               //mapèªžæ³•   <a,b>å…§ä¹‹aç‚ºè®€å…¥çš„å­— bç‚ºç›¸å°çš„åƒ¹æ ¼
 	
 		cin >> m >> n;
 		string word;
@@ -18,14 +18,14 @@ int main(void) {
 		
 		int price;
 		cin >> word >> price;
-		hay[word] = price;                                 //**********
+		hay[word] = price;                                
 	}
 	string s;
 	for (int i = 0; i < n; i++) {
 		int money = 0;
 	
-	while (cin >> word && word != ".") {                   //*********************
-		money += hay[word];                                //***************************
+	while (cin >> word && word != ".") {                 
+		money += hay[word];                             
 	}
 
 	cout << money << endl;
